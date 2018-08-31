@@ -16,10 +16,10 @@ Hotkeys (affecting selected characters):
 "N" - Recover spent spells and abilities.  
 
 Mage Hotkeys (You must be capable of casting the spell):  
-"S" - Minor Sequencer
-"D" - Spell Sequencer
-"C" - Contingency
-"V" - Chain Contingency
-"T" - Melf's Minute Meteors
-"G" - Stoneskin
-"F" - Friends
+"S" - Minor Sequencer  
+"D" - Spell Sequencer  
+"C" - Contingency  
+"V" - Chain Contingency  
+"T" - Melf's Minute Meteors  
+"G" - Stoneskin  
+"F" - Friends  
