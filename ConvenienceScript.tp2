@@ -1,0 +1,18 @@
+BACKUP ~ConvenienceScript/backup~
+AUTHOR ~ManiacalFreak~
+LANGUAGE ~English~ ~ConvenienceScript/english~ ~ConvenienceScript/english/english.tra~
+
+BEGIN ~ConvenienceScript~
+    COPY ~ConvenienceScript/resources/P!STO1.STO~ ~override/P!STO1.STO~
+        SAY NAME2 ~Convenience Store~
+    COPY ~ConvenienceScript/resources/P!QCKBUF.BS~ ~scripts/P!QCKBUF.BS~
+        APPEND ~scrpdesc.2DA~ ~P!QCKBUF	964836  964837~
+        COPY_EXISTING ~scrpdesc.2da~ ~override/scrpdesc.2da~
+            REPLACE ~964836~ @0
+            REPLACE ~964837~ @1
+    COPY ~ConvenienceScript/resources/P!INSTBF.SPL~ ~override/P!INSTBF.SPL~
+        SAY NAME1 @2
+        SAY UNIDENTIFIED_DESC @3
+	COPY ~ConvenienceScript/resources/P!RST.SPL~ ~override/P!RST.SPL~
+        SAY NAME1 @4
+        SAY UNIDENTIFIED_DESC @5
