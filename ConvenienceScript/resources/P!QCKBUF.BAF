@@ -26,7 +26,6 @@ IF
 	HotKey(S)
 	!Detect(NearestEnemyOf(Myself))
 	HaveKnownSpellRES("SPWI420")  // Minor Sequencer
-	LevelGT(Myself,6)
 THEN
 	RESPONSE #100
 		ReallyForceSpellRES("SPWI420",Myself)  // Minor Sequencer
@@ -36,17 +35,24 @@ IF
 	HotKey(D)
 	!Detect(NearestEnemyOf(Myself))
 	HaveKnownSpellRES("SPWI710")  // Spell Sequencer
-	LevelGT(Myself,13)
 THEN
 	RESPONSE #100
 		ReallyForceSpellRES("SPWI710",Myself)  // Spell Sequencer
 END
 
 IF
+	HotKey(E)
+	!Detect(NearestEnemyOf(Myself))
+	HaveKnownSpellRES("SPWI809")  // Spell Trigger
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("SPWI809",Myself)  // Spell Trigger
+END
+
+IF
 	HotKey(C)
 	!Detect(NearestEnemyOf(Myself))
 	HaveKnownSpellRES("SPWI617")  // Contingency
-	LevelGT(Myself,11)
 THEN
 	RESPONSE #100
 		ReallyForceSpellRES("SPWI617",Myself)  // Contingency
@@ -56,7 +62,6 @@ IF
 	HotKey(V)
 	!Detect(NearestEnemyOf(Myself))
 	HaveKnownSpellRES("SPWI908")  // Chain Contingency
-	LevelGT(Myself,17)
 THEN
 	RESPONSE #100
 		ReallyForceSpellRES("SPWI908",Myself)  // Chain Contingency
@@ -66,7 +71,6 @@ IF
 	HotKey(T)
 	!Detect(NearestEnemyOf(Myself))
 	HaveKnownSpellRES("SPWI325")  // Melf's Minute Meteors
-	LevelGT(Myself,4)
 THEN
 	RESPONSE #100
 		ReallyForceSpellRES("SPWI325",Myself)  // Melf's Minute Meteors
@@ -76,7 +80,6 @@ IF
 	HotKey(G)
 	!Detect(NearestEnemyOf(Myself))
 	HaveKnownSpellRES("SPWI408")  // Stoneskin
-	LevelGT(Myself,6)
 THEN
 	RESPONSE #100
 		ReallyForceSpellRES("SPWI408",Myself)  // Stoneskin

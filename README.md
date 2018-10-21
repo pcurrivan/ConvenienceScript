@@ -15,11 +15,13 @@ Hotkeys (affecting selected characters):
 "B" - Gives instant casting with no recovery for 6 seconds, for your prebuffing convenience.
 "N" - Recover spent spells and abilities.  
 
-Mage Hotkeys (You must be capable of casting the spell):  
+Spell Hotkeys:
+Instantly casts the spell without using a spell slot.  The character must know the spell.  
 "S" - Minor Sequencer  
-"D" - Spell Sequencer  
+"D" - Spell Sequencer
+"E" - Spell Trigger  
 "C" - Contingency  
 "V" - Chain Contingency  
 "T" - Melf's Minute Meteors  
-"G" - Stoneskin  
+"G" - Stoneskin / Ironskin
 "F" - Friends  
