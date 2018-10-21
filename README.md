@@ -23,5 +23,5 @@ Instantly casts the spell without using a spell slot.  The character must know t
 "C" - Contingency  
 "V" - Chain Contingency  
 "T" - Melf's Minute Meteors  
-"G" - Stoneskin / Ironskin
+"G" - Stoneskin / Ironskin  
 "F" - Friends  
