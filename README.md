@@ -18,7 +18,7 @@ Hotkeys (affecting selected characters):
 Spell Hotkeys:
 Instantly casts the spell without using a spell slot.  The character must know the spell.  
 "S" - Minor Sequencer  
-"D" - Spell Sequencer
+"D" - Spell Sequencer  
 "E" - Spell Trigger  
 "C" - Contingency  
 "V" - Chain Contingency  
