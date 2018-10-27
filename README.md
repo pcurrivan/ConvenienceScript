@@ -12,7 +12,7 @@ Warriors will approach enemies and attack. Non-warriors will attack enemies with
 
 Hotkeys (affecting selected characters):  
 "K" - Opens a store, allowing you to sell items immediately without trekking back to town. The store has no price depreciation.
-"B" - Gives instant casting with no recovery for 6 seconds, for your prebuffing convenience.
+"B" - Gives instant casting with no recovery for 6 seconds, for your prebuffing convenience.  
 "N" - Recover spent spells and abilities.  
 
 Spell Hotkeys:
