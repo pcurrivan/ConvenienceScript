@@ -11,7 +11,7 @@ Attack Functionality:
 Warriors will approach enemies and attack. Non-warriors will attack enemies within weapon range but will not approach distant enemies. Characters will not stop detecting traps, singing a bardsong, or turning undead to attack, but they will break invisibility or stealth. To keep a character in stealth, toggle off AI.  
 
 Hotkeys (affecting selected characters):  
-"K" - Opens a store, allowing you to sell items immediately without trekking back to town. The store has no price depreciation.
+"K" - Opens a store, allowing you to sell items immediately without trekking back to town. The store has no price depreciation.  
 "B" - Gives instant casting with no recovery for 6 seconds, for your prebuffing convenience.  
 "N" - Recover spent spells and abilities.  
 
