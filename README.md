@@ -25,3 +25,7 @@ Instantly casts the spell without using a spell slot.  The character must know t
 "T" - Melf's Minute Meteors  
 "G" - Stoneskin / Ironskin  
 "F" - Friends  
+
+--------------------------
+
+[Download the Latest Version](https://github.com/pcurrivan/ConvenienceScript/releases/download/v0.2/ConvenienceScriptv0.2.zip)
