@@ -1,4 +1,7 @@
 # ConvenienceScript
+
+# [Download the Latest Version](https://github.com/pcurrivan/ConvenienceScript/releases/download/v0.3/ConvenienceScriptv0.3.zip)
+
 Convenience Script Mod for Baldur's Gate: EE games
 
 This script provides basic attack functionality as well as hotkeys to activate some special convenience features. The convenience features can only be activated out of combat.  
@@ -31,8 +34,6 @@ Instantly casts the spell without using a spell slot.  The character must know t
 "F" - Friends  
 
 --------------------------
-
-# [Download the Latest Version](https://github.com/pcurrivan/ConvenienceScript/releases/download/v0.3/ConvenienceScriptv0.3.zip)
 
 ## Change Log:
 * 0.3
