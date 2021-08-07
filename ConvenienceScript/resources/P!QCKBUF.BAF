@@ -1,4 +1,18 @@
 IF
+	HotKey(Y)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+END
+
+IF
+	HotKey(U)
+THEN
+	RESPONSE #100
+		EquipRanged()
+END
+
+IF
 	HotKey(K)
 	!Detect(NearestEnemyOf(Myself))
 THEN
@@ -105,6 +119,23 @@ END
 
 IF
 	ActionListEmpty()
+	!Detect(NearestEnemyOf(Myself))
+	Class(Myself,BARD)
+	!StateCheck(Myself,STATE_CONFUSED)
+	!StateCheck(Myself,STATE_HELPLESS)
+	!StateCheck(Myself,STATE_PANIC)
+	!StateCheck(Myself,STATE_STUNNED)
+	!StateCheck(Myself,STATE_CHARMED)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!ModalState(BATTLESONG)
+THEN
+	RESPONSE #100
+		BattleSong()
+END
+
+IF
+	ActionListEmpty()
+	Detect(NearestEnemyOf(Myself))
 	Class(Myself,BARD)
 	!Kit(Myself,BLADE)
 	!Kit(Myself,JESTER)
@@ -116,7 +147,6 @@ IF
 	!StateCheck(Myself,STATE_STUNNED)
 	!StateCheck(Myself,STATE_CHARMED)
 	!StateCheck(Myself,STATE_INVISIBLE)
-	!ModalState(BATTLESONG)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("P!_SING","LOCALS",ONE_ROUND)
@@ -126,6 +156,7 @@ END
 
 IF
 	ActionListEmpty()
+	Detect(NearestEnemyOf(Myself))
 	Kit(Myself,BLADE)
 	!GlobalTimerNotExpired("P!_SING","LOCALS")
 	!StateCheck(Myself,STATE_CONFUSED)
@@ -134,7 +165,6 @@ IF
 	!StateCheck(Myself,STATE_STUNNED)
 	!StateCheck(Myself,STATE_CHARMED)
 	!StateCheck(Myself,STATE_INVISIBLE)
-	!ModalState(BATTLESONG)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("P!_SING","LOCALS",ONE_ROUND)
@@ -144,6 +174,7 @@ END
 
 IF
 	ActionListEmpty()
+	Detect(NearestEnemyOf(Myself))
 	Kit(Myself,JESTER)
 	See(NearestEnemyOf(Myself))
 	!GlobalTimerNotExpired("P!_SING","LOCALS")
@@ -153,7 +184,6 @@ IF
 	!StateCheck(Myself,STATE_STUNNED)
 	!StateCheck(Myself,STATE_CHARMED)
 	!StateCheck(Myself,STATE_INVISIBLE)
-	!ModalState(BATTLESONG)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("P!_SING","LOCALS",ONE_ROUND)
@@ -163,6 +193,7 @@ END
 
 IF
 	ActionListEmpty()
+	Detect(NearestEnemyOf(Myself))
 	Kit(Myself,SKALD)
 	!GlobalTimerNotExpired("P!_SING","LOCALS")
 	!StateCheck(Myself,STATE_CONFUSED)
@@ -171,7 +202,6 @@ IF
 	!StateCheck(Myself,STATE_STUNNED)
 	!StateCheck(Myself,STATE_CHARMED)
 	!StateCheck(Myself,STATE_INVISIBLE)
-	!ModalState(BATTLESONG)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("P!_SING","LOCALS",ONE_ROUND)
@@ -181,12 +211,25 @@ END
 
 IF
 	ActionListEmpty()
-	OR(5)
+	Class(Myself,BARD)
+	!StateCheck(Myself,STATE_CONFUSED)
+	!StateCheck(Myself,STATE_HELPLESS)
+	!StateCheck(Myself,STATE_PANIC)
+	!StateCheck(Myself,STATE_STUNNED)
+	!StateCheck(Myself,STATE_CHARMED)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	OR(4)
 		Class(Myself,FIGHTER_ALL)
 		Class(Myself,PALADIN_ALL)
 		Class(Myself,RANGER_ALL)
 		Class(Myself,MONK)
-		Kit(Myself,BLADE)
 	!StateCheck(Myself,STATE_CONFUSED)
 	!StateCheck(Myself,STATE_HELPLESS)
 	!StateCheck(Myself,STATE_PANIC)

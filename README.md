@@ -14,6 +14,10 @@ Hotkeys (affecting selected characters):
 "K" - Opens a store, allowing you to sell items immediately without trekking back to town. The store has no price depreciation.  
 "B" - Gives instant casting with no recovery for 6 seconds, for your prebuffing convenience.  
 "N" - Recover spent spells and abilities.  
+"Y" - Equip a melee weapon  
+"U" - Equip a ranged weapon  
+
+Note that Y and U are bound by default to toggling some UI elements.  It is recommended that you unbind these default actions.  
 
 Spell Hotkeys:
 Instantly casts the spell without using a spell slot.  The character must know the spell.  
@@ -28,6 +32,11 @@ Instantly casts the spell without using a spell slot.  The character must know t
 
 --------------------------
 
-[Download the Latest Version](https://github.com/pcurrivan/ConvenienceScript/releases/download/v0.2/ConvenienceScriptv0.2.zip)
+# [Download the Latest Version](https://github.com/pcurrivan/ConvenienceScript/releases/download/v0.3/ConvenienceScriptv0.3.zip)
 
---------------------------
+## Change Log:
+* 0.3
+  * Improved bard behavior.
+    * All bards now close to enemies and attack when wielding any weapon.
+    * Bards now only sing during combat.
+  * Added melee / ranged weapon hotkeys
